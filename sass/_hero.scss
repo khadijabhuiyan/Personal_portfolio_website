@@ -1,0 +1,172 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  &.white-theme {
+  // background-color:#1A1A1C;
+  background: linear-gradient(to right, white, #a2ce57);
+  color: black;
+  i{
+    color: #121212;
+    background-color:#fff;
+  }
+}
+  .theme-change {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: $BackgroundColor;
+    font-size: 1.3rem;
+    cursor: pointer;
+    i{
+      background-color: #121212;
+      color: #fff;
+    }
+  }
+
+ .portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; 
+  max-width: 600px;
+
+  .intro {
+    text-align: start;
+
+    h2 {
+      font-size: 42px;
+      line-height: 1.2;
+      font-weight: 600;
+      letter-spacing: 1px;
+
+      span {
+        font-weight: 700;
+        color: $BrandColor;
+      }
+    }
+  }
+   .description{
+    //   margin-top: 15px;
+      font-size: 20px;
+      text-align: start;
+    //   line-height: 1.6;
+    //   max-width: 500px;
+    }
+
+  .hire-btn {
+    margin-top: 20px;
+    width: 180px;
+    height: 50px;
+    background: $BrandColor;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 0 20px $BrandColor;
+
+    &:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 20px $BrandColor;
+    }
+
+    &:active {
+      transform: scale(1);
+      box-shadow: 0 0 10px $BrandColor;
+    }
+  }
+}
+
+
+  .bg-img {
+    .img-holder {
+      width: 300px;
+      height: 450px;
+      border-radius: 50%;
+      overflow: hidden;
+      
+      border: 1px solid $BrandColor;
+      //  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        //  animation: floatBg 6s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero {
+    flex-direction: column-reverse;
+    gap: 10px;
+    height: 100vh;
+    padding: 80px 20px;
+    text-align: center;
+
+    .portfolio {
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        font-size: 32px;
+      }
+      .description {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .hire-btn {
+        width: 160px;
+        height: 45px;
+        font-size: 15px;
+      }
+    }
+
+    .bg-img {
+      margin-top: 150px;
+      .img-holder {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+   footer{
+        position: absolute;
+        bottom: 5px;
+      }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    .portfolio {
+      h2 {
+        font-size: 28px;
+      }
+      .description {
+        font-size: 16px;
+      }
+    }
+    .bg-img {
+      .img-holder {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+
+
+
+

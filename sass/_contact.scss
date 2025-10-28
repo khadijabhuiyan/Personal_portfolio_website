@@ -1,0 +1,82 @@
+.contact {
+  padding: 15px;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.95); 
+  position: relative; 
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &.visible {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    display: flex;
+
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+      color: $BrandColor;
+    }
+  }
+
+  p {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0 40px;
+  }
+
+  .contact-form {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid $BrandColor;
+    border-radius: 10px;
+    padding: 20px;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .submit-btn {
+      width: 120px;
+      height: 45px;
+      background: $BrandColor;
+      color:black;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+      }
+    }
+  }
+}

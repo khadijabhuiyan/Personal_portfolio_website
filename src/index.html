@@ -3,17 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Khadija's Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<h1>Hello World</h1>
+    <header class="header" id="header">
+        <nav>
+            <div class="logo">
+                <i class="fa-brands fa-pagelines"></i><br>
+                <p><span>Kha</span>dija</p>
+            </div>
+            <div class="toggle-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#" id="portfolioBtn">Portfolio</a></li>
+                    <li id=><a href="#" id="skillsBtn">Skills</a></li>
+                    <li><a href="#" id="experienceBtn">Experience</a></li>
+                    <li><a href="#" id="projectsBtn">Projects</a></li>
+                    <li><a href="#" id="educationBtn">Education</a></li>
+                </ul>
+            </div>
+            <button id="contactBtn" class="contact-btn">Contact Me</button>
+        </nav>
+    </header>
+    <main id="hero" class="hero">
+         <button class="theme-change"><i class="fa-solid fa-moon"></i></button>
+    <div id="portfolio" class="portfolio">
+        <div class="intro"> 
+            <h3>Hi</h3>
+            <h2>I'm <span>Khadija Bhuiyan</span></h2>
+            <h1>a Frontend Developer</h1>
+        </div>
+        <p class="description">
+           A passionate web developer turning ideas into stunning, user-friendly websites. I craft clean, creative, and interactive digital experiences that leave a lasting impression.
+        </p> <br>
+        <button id="hireMeBt" class="hire-btn">Hire Me</button>
+    </div>
+    <div id="bg-img" class="bg-img">
+        <div class="img-holder">
+            <img src="../img/profile-img2.png" alt="">
+        </div>
+    </div>
+    </main>
+
+    <section id="hireMe" class="hire-me">
+        <button id="hireCloseBtn" class="hire-close-btn">&times;</button>
+         <h2>My Service Pricing</h2>
+
+        <table class="price-table">
+    <thead>
+      <tr>
+        <th>Package</th>
+        <th>Features</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Basic Website</td>
+        <td>3 Pages · Responsive Design</td>
+        <td>$300</td>
+         </tr>
+      <tr>
+        <td>Standard Website</td>
+        <td>5 Pages · Contact Form</td>
+        <td>$500</td>
+      </tr>
+      <tr>
+        <td>Premium Website</td>
+        <td>10 Pages · Custom Design · CMS </td>
+        <td>$800</td>
+      </tr>
+    </tbody>
+  </table>
+        <button class="contact-to-hire" id="contactToHire">Contact Me</button>
+    </section>
+
+    <section id="skills" class="skills">
+        <button id="skillsCloseBtn" class="close-btn">&times;</button>
+        <h2>💡 My Skills</h2>
+        <p class="sub-text">A blend of technical expertise and creative tools I work with!</p>
+       <div class="skills-container">
+        <div class="skill-card">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML</h3>
+        </div>
+        <div class="skill-card">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS</h3>
+        </div>
+        <div class="skill-card">
+        <i class="fa-brands fa-js"></i>
+        <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+        <i class="fa-brands fa-sass"></i>
+        <h3>SASS / SCSS</h3>
+        </div>
+        <div class="skill-card">
+        <i class="fa-solid fa-file-word"></i>
+        <h3>MS Word</h3>
+        </div>
+        <div class="skill-card">
+        <i class="fa-solid fa-file-excel"></i>
+        <h3>MS Excel</h3>
+        </div>
+        <div class="skill-card">
+        <i class="fa-solid fa-file-powerpoint"></i>
+        <h3>MS PowerPoint</h3>
+        </div>
+        <div class="skill-card">
+        <i class="fa-solid fa-desktop"></i>
+        <h3>Operating Systems</h3>
+        </div>
+        <div class="skill-card">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email & Internet</h3>
+        </div>
+
+        <!-- Design Skills -->
+        <div class="skill-card">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h3>Adobe Illustrator</h3>
+        </div>
+        <div class="skill-card">
+        <i class="fa-solid fa-image"></i>
+        <h3>Adobe Photoshop</h3>
+        </div>
+
+
+       </div>
+    </section>
+
+    <section id="experience" class="experience">
+         <button id="experienceCloseBtn" class="experience-close-btn">&times;</button>
+        <h2>💼 Professional Experience</h2>
+        <p class="sub-text">My teaching and administrative background.</p>
+        <div class="experience-container">
+            <div class="exp-card">
+      <div class="exp-header">
+        <h3>Lecturer & Computer Operator (Part-time)</h3>
+        <span class="duration">Oct 2021 – Apr 2023</span>
+      </div>
+
+      <p class="institute">Govt. Haraganga College, Munshiganj</p>
+
+      <ul class="responsibilities">
+        <li>Conducted lectures and tutorials for Intermediate students of the college.</li>
+        <li>Assisted in preparing academic materials and examination scripts.</li>
+        <li>Operated and maintained college computer systems and databases.</li>
+        <li>Supported administrative and digital documentation tasks using Microsoft Office.</li>
+        <li>Assisted students and faculty with computer-related queries and technical issues.</li>
+      </ul>
+    </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+         <button id="projectsCloseBtn" class="projects-close-btn">&times;</button>
+        <h2>💻 My Projects</h2>
+        <p class="sub-text">Here are some of my recent works.</p>
+        <div class="projects-container">
+        <div class="project-card">
+        <!-- <img src="https://khadijabhuiyan.github.io/Project-1/src/assets/portfolio-preview.jpg" alt="golf Website"> -->
+        <div class="project-info">
+            <h3>Golf Equipment Review & Media Website</h3>
+            <p>A responsive and creative Golf Product Review & News / Media Website built using HTML, CSS, and JavaScript.</p>
+            <a href="https://khadijabhuiyan.github.io/Project-1/src/" target="_blank" class="btn">View Project</a>
+      </div>
+        </div>
+         </div>
+    </section>
+
+    <section id="education" class="education">
+         <button id="educationCloseBtn" class="education-close-btn">&times;</button>
+        <h2>🎓 Academic Qualification</h2>
+        <div class="edu-card">
+        <span class="year">2021</span>
+        <h3>Master of Arts (M.A) in English</h3>
+        <p>Govt. Haraganga College, Munshiganj</p>
+        <p>National University</p>
+        <!-- <p>CGPA: 2.88 / 4.00</p> -->
+    </div>
+        <div class="edu-card">
+        <span class="year">2017</span>
+        <h3>Bachelor of Arts (Honours) in English</h3>
+        <p>Govt. Haraganga College, Munshiganj</p>
+        <p>National University</p>
+        <!-- <p>CGPA: 3.04 / 4.00</p> -->
+    </div>
+
+    <div class="edu-card">
+        <span class="year">2013</span>
+        <h3>Higher Secondary Certificate (H.S.C)</h3>
+        <p>Govt. Haraganga College, Munshiganj</p>
+        <p>Board: Dhaka | Group: Humanities</p>
+        <!-- <p>GPA: 4.60 / 5.00</p> -->
+    </div>
+     <div class="edu-card">
+        <span class="year">2011</span>
+        <h3>Secondary School Certificate (S.S.C)</h3>
+        <p>Rancha Ruhitpur High School, Munshiganj</p>
+        <p>Board: Dhaka | Group: Science</p>
+        <!-- <p>GPA: 3.56 / 5.00</p> -->
+    </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <button id="closeBtn" class="close-btn">&times;</button>
+        <p>Fill out the form below to contact me 👇</p>
+        <form id="contactForm" class="contact-form">
+            <input type="text" placeholder="Your Name" id="name" required>
+            <input type="email" placeholder="Your Email" id="email" required>
+            <textarea name="" id="messege" rows="8" placeholder="Your Message" required></textarea>
+            <button id="submitBtn" class="submit-btn" type="submit">Send</button>
+        </form>
+        <div id="formMessage"></div>
+    </section>
+
+    <footer>
+    <p>© 2025 Khadija Bhuiyan | All rights reserved.</p>
+  </footer>
 
 
 
 
 
 
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
